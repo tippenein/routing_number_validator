@@ -27,25 +27,3 @@ validates :my_routing_number, :routing_number => true
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-
-
-## Usage
-
-Add to your Gemfile:
-
-```ruby
-gem 'email_validator'
-```
-
-Run:
-
-```
-bundle install
-```
-
-Then add the following to your model:
-
-```ruby
-validates :my_email_attribute, :email => true
-```
-
