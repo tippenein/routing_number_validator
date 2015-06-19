@@ -1,7 +1,7 @@
 class RoutingNumberValidator < ActiveModel::EachValidator
 
   def validate_each(record, attribute, value)
-    unless value && value.size == 9
+    unless value && value.to_s.size == 9
       record.errors[attribute] << (options[:message] || "must be 9 digits long")
     end
 
