@@ -1,5 +1,22 @@
 # RoutingNumberValidator
 
+Rails 3 and 4 Bank Routing Number validator
+
+This gem is intended to be a minimal application of validations provided in
+larger libraries (see `ActiveMerchant`) if a more minimal implementation is
+intended.
+
+Use this gem as if it was just another ActiveModel validator (because it is)
+
+```ruby
+class MyModel < ActiveRecord
+  validates :my_routing_number, :routing_number => true
+end
+
+billing_info = MyModel.new(invalid_routing_number_params)
+billing_info.valid? => false
+```
+
 [![Build Status](https://secure.travis-ci.org/tippenein/routing_number_validator.png)](http://travis-ci.org/tippenein/routing_number_validator)
 
 ## Usage
