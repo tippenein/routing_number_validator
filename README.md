@@ -1,5 +1,7 @@
 # RoutingNumberValidator
 
+[![Build Status](https://secure.travis-ci.org/tippenein/routing_number_validator.png)](http://travis-ci.org/tippenein/routing_number_validator)
+
 Rails 3 and 4 Bank Routing Number validator
 
 This gem is intended to be a minimal application of validations provided in
@@ -16,8 +18,6 @@ end
 billing_info = MyModel.new(invalid_routing_number_params)
 billing_info.valid? => false
 ```
-
-[![Build Status](https://secure.travis-ci.org/tippenein/routing_number_validator.png)](http://travis-ci.org/tippenein/routing_number_validator)
 
 ## Usage
 
